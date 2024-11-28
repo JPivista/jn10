@@ -5,6 +5,7 @@ import { FaBars, FaChevronDown, FaArrowRight } from 'react-icons/fa';
 const navLinks = [
     { name: 'Home', route: '/' },
     { name: 'Services', route: '/service' },
+    { name: 'About J10', route: '/about-j10' },
     { name: 'Portfolio', route: '/portfolio' },
     // { name: 'Our Doctors', route: '/our-doctors' },
     // { name: 'Blogs', route: '/blog' },
