@@ -45,7 +45,7 @@ const NavBar = () => {
     }, []);
 
     const getLinkClass = ({ isActive }) =>
-        isActive ? 'text-white font-bold [text-shadow:_0_4px_8px_rgba(144_165_223_/_0.2)] border-b border-white' : 'text-black hover:text-white ';
+        isActive ? 'text-[#25B2C0] font-bold [text-shadow:_0_4px_8px_rgba(144_165_223_/_0.2)] border-b border-[#25B2C0]' : 'text-black hover:text-[#25B2C0] ';
 
     const getSubLinkClass = ({ isActive }) =>
         isActive
@@ -137,8 +137,8 @@ const NavBar = () => {
                 <div className={`lg:hidden absolute top-16 left-0 w-full bg-white z-50 border border-gray-200 shadow-lg ${isMenuOpen ? 'block' : 'hidden'}`}>
                     <div className='flex flex-col items-start space-y-4 py-4'>
                         {navLinks.map((link) => (
-                            <div key={link.route}>
-                                <div className='flex items-center'>
+                            <div key={link.route} className='w-full'>
+                                <div className='flex items-center w-full'>
                                     <NavLink
                                         to={link.route}
                                         className={`${getLinkClass} block px-4 py-2 text-black hover:bg-gray-100`}
