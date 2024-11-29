@@ -1,9 +1,7 @@
 import React from 'react'
 import serviceBanners from '../../assets/service_banner.png';
 
-
-
-const ServiceBanner = () => {
+const CareersBanner = () => {
     return (
         <>
             <div
@@ -18,4 +16,4 @@ const ServiceBanner = () => {
     )
 }
 
-export default ServiceBanner
+export default CareersBanner
