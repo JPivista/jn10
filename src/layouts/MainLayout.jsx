@@ -26,12 +26,12 @@ const MainLayout = () => {
             {/* Floating Scroll Indicator */}
             {scrollIndicator > 1 && (  // Show only after 1% scroll
                 <div
-                    className="fixed z-50 right-4 bottom-4 flex items-center justify-center w-14 h-14 text-white text-sm font-bold rounded-full shadow-md shadow-[#FFDF00]"
+                    className="fixed z-50 right-4 bottom-4 flex items-center justify-center w-12 h-12 text-white text-sm font-bold rounded-full shadow-md shadow-[#E3609E]"
                     style={{
-                        background: `conic-gradient(#14202E ${scrollIndicator}%, #e5e7eb ${scrollIndicator}%)`, // Scroll progress effect
+                        background: `conic-gradient(#25B2C0 ${scrollIndicator}%, #e5e7eb ${scrollIndicator}%)`, // Scroll progress effect
                         position: 'fixed',
                         right: '20px',
-                        bottom: '140px',
+                        bottom: '80px',
                     }}
                 >
 

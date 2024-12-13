@@ -3,10 +3,11 @@ import { Link, NavLink } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 
 const navLinks = [
-    { name: 'Home', route: '/' },
+    // { name: 'Home', route: '/' },
     { name: 'Services', route: '/service' },
     { name: 'About J10', route: '/about-j10' },
-    { name: 'Business Management ', route: '/business-management ' },
+    { name: 'Business Management ', route: '/business-management' },
+    { name: 'Portfolio ', route: '/portfolio' },
     { name: 'Careers', route: '/careers' },
     { name: 'Contact Us', route: '/contact-us' },
 ];
@@ -57,7 +58,7 @@ const NavBar = () => {
                 </button>
 
                 {/* Desktop Menu */}
-                <div className={`hidden lg:flex space-x-6 px-4 py-2 ${isScrolled || isMenuOpen ? 'bg-sblue rounded-lg' : 'bg-sblue rounded-lg'}`}>
+                <div className={`hidden lg:flex space-x-6 px-4 py-2 ${isScrolled || isMenuOpen ? 'bg-sblue rounded-lg' : 'bg-sblue rounded-lg shadow-md shadow-gray-400'}`}>
                     <ul className='flex items-center space-x-6'>
                         {navLinks.map(link => (
                             <li key={link.route}>

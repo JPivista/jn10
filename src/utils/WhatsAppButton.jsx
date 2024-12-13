@@ -1,6 +1,6 @@
 
 const WhatsAppButton = () => {
-    const phoneNumber = '9500642143'; // Replace with your phone number
+    const phoneNumber = '7010263537'; // Replace with your phone number
     const message = 'Hello, I need help with your services'; // Optional: Default message
 
     return (

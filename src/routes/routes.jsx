@@ -9,6 +9,7 @@ import Careers from '../pages/Careers/Careers';
 import JobDetails from '../LandingPage/JobDetails/JobDetails';
 import Contactus from '../pages/Contactus/Contactus';
 import BusinessManagement from '../pages/BusinessManagement/BusinessManagement';
+import Portfolio from '../pages/Portfolio/Portfolio'
 
 
 function AppRoutes() {
@@ -22,6 +23,7 @@ function AppRoutes() {
                 { path: "/about-j10", element: <AboutJ10 /> },
                 { path: "/business-management", element: <BusinessManagement /> },
                 { path: "/careers", element: <Careers /> },
+                { path: "/portfolio", element: <Portfolio /> },
                 { path: "/job-details/:slug", element: <JobDetails /> },
                 { path: "/contact-us", element: <Contactus /> },
                 // Catch-all route for non-existing paths
